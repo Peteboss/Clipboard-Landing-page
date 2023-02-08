@@ -1,0 +1,377 @@
+:root{
+    --clr-primary: hsl(171, 66%, 44%);
+    --clr-primary-100: hsl(233, 100%, 69%);
+
+    --clr-neutral-100: hsl(210, 10%, 33%);
+    --clr-neutral-200: hsl(201, 11%, 66%);
+
+    --ff-family: 'Bai Jamjuree';
+
+    --fw-regular:500;
+    --fw-bold:700; 
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{  margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    background: #fff;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    font-family: var(--ff-family);
+    font-size: 18px;
+    font-weight: var(--fw-regular);
+    color: #000;
+    /*margin: 1rem;*/
+}
+
+h1,
+h2{
+    color: var(--clr-neutral-100);
+}
+main{
+    margin: 2rem;
+}
+.img__bg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.img__bgg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.img__bgg img{
+    width: 15%;
+    padding-top: 3rem;
+}
+.img__bg img{
+    width: 30%;
+    padding-top: 4rem;
+}
+.product__information{
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.product__information h1{
+    text-align: center;
+}
+.product__information p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.buttons{
+    display: grid;
+    gap: .8rem;
+    margin-bottom: 7rem;
+}
+.buttons .btn{
+    padding: 1rem;
+    border: 2px 0px var(--clr-primary) solid;
+    background: var(--clr-primary);
+    color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px var(--clr-primary), 0px 0px 10px var(--clr-primary);
+}
+.buttons .download{
+    padding: 1rem;
+    background: var(--clr-primary-100);
+    color: #fff;
+    border: 2px var(--clr-primary-100) solid;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px var(--clr-primary-100), 0px 0px 10px var(--clr-primary-100);
+}
+
+.product__info{
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.product__info h2{
+    text-align: center;
+}
+.product__info p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.grouped{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.categories{
+    display: grid;
+    gap: 1rem;
+}
+.categories h2{
+    text-align: center;
+}
+.categories p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.category h2{
+    text-align: center;
+}
+.category p{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.categoryy{
+    margin-top: 6rem;
+}
+.categoryy h2{
+    text-align: center;
+}
+.categoryy p{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.group{
+    display: grid;
+    gap: 4rem;
+}
+.bucket__list .img__wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.bucket__list h2{
+    text-align: center;
+}
+.bucket__list p{
+    text-align: center;
+}
+
+.images{
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    display: grid;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.categorical h1{
+    text-align: center;
+}
+.categorical p{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+footer{
+    background: hsl(0, 0%, 90%);
+}
+
+footer .img{
+    width: 30%;
+}
+
+.access{
+    display: grid;
+    gap: 1rem;
+}
+.access p{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.attribution{
+    text-align: center;
+}
+
+.first__wrap{
+    display: grid;
+    gap: .7rem;
+}
+
+
+@media(min-width: 600px){
+    .img__bg img{
+        width: 10%;
+    } 
+
+    .product__information{
+        width: 60%;
+        margin-left: 16rem;
+    }
+
+    .product__info{
+        width: 60%;
+        margin-left: 16rem;
+    }
+
+    .category{
+        width: 60%;
+        margin-left: 16rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .wrapped{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        margin-bottom: 6rem;
+    }
+
+    .wrapped img{
+        margin-left: -4rem;
+        width: 50%;
+        height: 80vh;
+    }
+
+    .categories{
+        font-size: 12px;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        width: 60%;
+    }
+
+    .categoryy{
+        display: grid;
+        gap: 1rem;
+    }
+    .categoryy p{
+        font-size: 14px;
+    }
+    .image__wrap{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-left: 16rem;
+    }
+
+    .group{
+        font-size: 12px;
+        display: flex;
+        margin: 0 4rem;
+    }
+    .group h2{
+        font-size: 16px;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+        margin: 9rem 8rem;
+    }
+    .images img{
+        height: 6vh;
+    }
+
+    .categorical{
+        display: grid;
+        gap: 1rem;
+        width: 60%;
+        margin-left: 16rem;
+    }
+
+    .whole__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .access{
+        display: flex;
+        gap: 4rem;
+    }
+    .access p{
+        font-size: 14px;
+    }
+    .grid__group{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    .icons{
+        display: flex;
+        gap: 1rem;
+        margin-right: 6rem;
+    }
+    .icons img{
+        width: 20%;
+        height: 3vh;
+    }
+
+    .img__bgg img{
+        width: 25%;
+        margin-left: 4rem;
+    }
+
+    .first__wrap{
+        display: grid;
+        gap: .5rem;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .download{
+        width: 20%;
+        height: 8vh;
+    }
+
+    .btn{
+        width: 20%;
+        height: 8vh;
+    }
+}
+
+@media(min-width: 390px){
+    body{
+        background-image: url(./images/bg-header-desktop.png);
+        width: 100%;
+    }
+}
+
+/*@media(max-width: 1200px){
+    body{
+        background-image: url(./images/bg-header-desktop.png);
+    }
+}*/
